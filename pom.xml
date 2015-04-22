@@ -3,8 +3,10 @@
   <groupId>com.test</groupId>
   <artifactId>demo</artifactId>
   <version>0.0.3-SNAPSHOT</version>
-  <packaging>jar</packaging>
   <name>com.test.demo</name>
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
   <scm>
 	<connection>scm:git:git@github.com:yeraybv/demo.git</connection>
 	<url>scm:git:git@github.com:yeraybv/demo.git</url>
@@ -25,6 +27,23 @@
     </distributionManagement>
   <build>
     <plugins>
+	   <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-assembly-plugin</artifactId>
+		  <version>2.1</version>
+		  <configuration>
+			<descriptor>src/assembly.xml</descriptor>
+			<finalName>${pom.name}-${pom.version}</finalName>
+		  </configuration>
+		  <executions>
+			<execution>
+			  <phase>package</phase>
+			  <goals>
+				<goal>single</goal>
+			  </goals>
+			</execution>
+		  </executions>
+		</plugin>
 	   <plugin>
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-release-plugin</artifactId>

@@ -1,0 +1,24 @@
+<assembly>
+   <!-- START SNIPPET: formats -->
+  <formats>
+     <format>zip</format>
+  </formats>
+  <!-- END SNIPPET: formats -->
+  <!-- START SNIPPET: fileSets -->
+  <fileSets>
+    <fileSet>
+      <includes>
+        <include>README*</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>src</directory>
+      <outputDirectory>site</outputDirectory>
+      <includes>
+        <include>*.*</include>
+      </includes>
+      <lineEnding>dos</lineEnding>
+    </fileSet>
+  </fileSets>
+  <!-- END SNIPPET: fileSets -->
+</assembly>

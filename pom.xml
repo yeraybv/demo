@@ -11,6 +11,18 @@
 	<developerConnection>scm:git:git@github.com:yeraybv/demo.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
+  <distributionManagement>
+        <repository>
+            <id>fakerepo</id>
+            <name>Local file system</name>
+            <url>file:///c:/repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>fakesnapshotrepo</id>
+            <name>Local file system</name>
+            <url>file:///c:/repo</url>
+        </snapshotRepository>
+    </distributionManagement>
   <build>
     <plugins>
 	   <plugin>

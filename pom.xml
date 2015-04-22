@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.test</groupId>
   <artifactId>demo</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
   <name>com.test.demo</name>
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -11,7 +11,7 @@
 	<connection>scm:git:git@github.com:yeraybv/demo.git</connection>
 	<url>scm:git:git@github.com:yeraybv/demo.git</url>
 	<developerConnection>scm:git:git@github.com:yeraybv/demo.git</developerConnection>
-    <tag>demo-0.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
         <repository>
